@@ -14,10 +14,10 @@ const avatars = [
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[90vh] w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
       <Image
-        src={"/hero.jpg"}
+        src={"https://images.unsplash.com/photo-1559599101-f09722fb4948?w=2600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHNhbG9ufGVufDB8fDB8fHww"}
         alt="Beauty salon hero background"
         fill
         priority
@@ -34,7 +34,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="max-w-xl rounded-3xl border border-white/20 bg-white/20 p-8 backdrop-blur-none md:p-10"
+          className="max-w-xl rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-none md:p-10 mt-10"
         >
           {/* Small label */}
           <p className="mb-3 text-sm tracking-wide text-white/80">

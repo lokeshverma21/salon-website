@@ -29,7 +29,7 @@ const itemVar = {
 
 export default function ContactPage() {
   return (
-    <section className="relative w-full min-h-screen bg-[#F8F0EB] overflow-hidden selection:bg-[#462B18] selection:text-white">
+    <section className="relative w-full mt-18 min-h-screen bg-[#F8F0EB] overflow-hidden selection:bg-[#462B18] selection:text-white">
       
       {/* BACKGROUND DECORATIONS (Subtle Gradients) */}
       <div className="absolute top-[-10%] left-[-10%] w-125 h-1125 bg-[#EBDBC2] rounded-full blur-[120px] opacity-40 pointer-events-none" />

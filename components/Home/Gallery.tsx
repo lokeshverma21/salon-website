@@ -1,27 +1,3 @@
-// const images = [
-//   {
-//     src: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGluZGlhbiUyMGJyaWRlfGVufDB8fDB8fHww",
-//     alt: "Indian bridal makeup close-up",
-//     className: "col-span-2 row-span-2",
-//   },
-//   {
-//     src: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGluZGlhbiUyMGJyaWRlfGVufDB8fDB8fHww",
-//     alt: "Wedding makeup look",
-//     className: "",
-//   },
-//   {
-//     src: "https://images.unsplash.com/photo-1688583417770-ff6cc18071dc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5haWwlMjBhcnR8ZW58MHx8MHx8fDA%3D",
-//     alt: "Luxury nail studio",
-//     className: "",
-//   },
-//   {
-//     src: "https://images.unsplash.com/photo-1767027151400-fa6a3d905e7c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBhcnR5JTIwbWFrZXVwfGVufDB8fDB8fHww",
-//     alt: "Party makeup look",
-//     className: "col-span-2",
-//   },
-// ];
-
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -33,54 +9,48 @@ const GallerySection = () => {
       id: 1,
       src: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=2400&auto=format&fit=crop&q=60",
       alt: "Bridal makeup transformation",
-      className: "md:row-span-2 md:col-span-1 col-span-1",
+      className: "col-span-2 row-span-2", // Large Square
     },
     {
       id: 2,
       src: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=2600&q=90",
-      alt: "Event glam makeup look",
-      className: "md:row-span-1 md:col-span-1 row-span-2 hidden md:block col-span-1",
+      alt: "Event glam makeup",
+      className: "col-span-1 row-span-2 hidden md:block", // Tall Portrait
     },
     {
       id: 3,
       src: "https://images.unsplash.com/photo-1688583417770-ff6cc18071dc?auto=format&fit=crop&w=2600&q=90",
       alt: "Luxury nail artistry",
-      className: "row-span-1 col-span-1",
+      className: "col-span-1 row-span-1", // Small Square
     },
     {
       id: 4,
       src: "https://images.unsplash.com/photo-1767027151400-fa6a3d905e7c?auto=format&fit=crop&w=1600&q=90",
-      alt: "Skin glow treatment",
-      className: "row-span-1 col-span-1",
+      alt: "Skin treatments",
+      className: "col-span-1 row-span-1", // Small Square
     },
     {
       id: 5,
       src: "https://images.unsplash.com/photo-1575939238474-c8ada13b2724?w=2400&auto=format&fit=crop",
-      alt: "Premium hair styling2",
-      className: "row-span-2 col-span-1",
+      alt: "Hair styling expertise",
+      className: "col-span-2 row-span-1", // Wide Landscape
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1629397662600-50ad523ef4fb?w=2400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fHNhbG9uJTIwYmVhdXR5fGVufDB8MHwwfHx8MA%3D%3D",
-      alt: "Premium hair styling1",
-      className: "row-span-1 col-span-1",
+      src: "https://images.unsplash.com/photo-1629397662600-50ad523ef4fb?w=2400&auto=format&fit=crop&q=60",
+      alt: "Premium salon experience",
+      className: "col-span-1 row-span-1", // Small
     },
-    {
+     {
       id: 7,
       src: "https://images.unsplash.com/photo-1739010577139-6f904e57fe41?w=2400&auto=format&fit=crop&q=90",
-      alt: "Premium hair styling",
-      className: "row-span-1 col-span-1",
+      alt: "Bridal portrait",
+      className: "col-span-1 row-span-1", // Small
     },
-    // {
-    //   id: 8,
-    //   src: "https://images.unsplash.com/photo-1739010577139-6f904e57fe41?w=600&auto=format&fit=crop&q=90",
-    //   alt: "Premium hair styling",
-    //   className: "row-span-2 col-span-1",
-    // },
   ];
 
   return (
-    <section className="bg-[#F8F0EB] py-20 px-4">
+    <section className="bg-[#F8F0EB] py-24 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.span
@@ -88,9 +58,9 @@ const GallerySection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="block text-xs uppercase tracking-wider text-[#6F512B] font-medium mb-3"
+            className="block text-xs uppercase tracking-widest text-[#6F512B] font-semibold mb-3"
           >
-            Our Transformations
+            A Glimpse of Perfection
           </motion.span>
 
           <motion.h2
@@ -98,39 +68,37 @@ const GallerySection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-serif font-bold text-[#462B18] max-w-3xl mx-auto"
+            className="text-4xl md:text-5xl font-heading text-[#462B18] max-w-3xl mx-auto leading-tight"
           >
-            Where Elegance Meets Expertise
+            Where Artistry Meets Soul
           </motion.h2>
         </div>
 
-        {/* ✅ TRUE BENTO GRID */}
-        <div className="grid grid-cols-2 md:grid-cols-3 auto-rows-[180px] gap-4">
+        {/* Creative Bento Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] gap-4 md:gap-6">
           {galleryItems.map((item, index) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className={`${item.className} relative overflow-hidden rounded-xl shadow-lg`}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.05 }}
+              viewport={{ once: true, margin: "-50px" }}
+              className={`group relative overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-500 ${item.className}`}
             >
-              <div className="relative w-full h-full">
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  className="object-cover transition-all duration-700 ease-out"
-                />
-
-                <motion.div
-                  className="absolute inset-0 bg-black/20 backdrop-blur-[2px] flex items-center justify-center opacity-0 transition-opacity duration-500"
-                  whileHover={{ opacity: 1 }}
-                >
-                  <p className="text-white text-lg font-medium px-4 text-center">
-                    {item.alt}
-                  </p>
-                </motion.div>
+              <Image
+                src={item.src}
+                alt={item.alt}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+              />
+              
+              {/* Artistic Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#462B18]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                <p className="translate-y-4 text-white font-heading text-xl md:text-2xl transform group-hover:translate-y-0 transition-transform duration-500">
+                  {item.alt}
+                </p>
+                <div className="h-0.5 w-12 bg-[#EBDBC2] mt-2 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
               </div>
             </motion.div>
           ))}
